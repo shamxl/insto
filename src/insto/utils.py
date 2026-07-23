@@ -2,6 +2,7 @@ from pathlib import Path
 from pyfiglet import Figlet 
 from rich import print
 from instagrapi import Client
+from insto.logger import info
 
 def print_logo () -> None:
     f = Figlet (font='slant').renderText("Insto")
@@ -25,6 +26,7 @@ def get_settings ():
 def get_client ():
     settings = get_settings()
     cl = Client()
+    info("connecting to instagram")
     cl.load_settings(settings)
     
     return cl

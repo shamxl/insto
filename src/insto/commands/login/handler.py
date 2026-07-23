@@ -1,10 +1,10 @@
 from typer import Typer
 from rich import print
 from .login import login_to_instagram
-
+from insto.logger import info
 app = Typer()
 
 @app.command()
 def login (session_id: str) -> None:
-    print (f"[bold yellow]logging in with session id...[/bold yellow]")
+    info ("logging in with session id...")
     login_to_instagram(session_id)

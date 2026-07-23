@@ -1,11 +1,11 @@
 import typer
 from insto.utils import get_client
-from rich import print
+from insto.logger import info
 
 app = typer.Typer()
 
 @app.command()
 def me ():
     client = get_client()
-    username = get_client().account_info().username
-    print (f"logged in as: {username}")
+    account_info = client.account_info()
+    info(f"logged in as: [white]{account_info.username}[/white]")
