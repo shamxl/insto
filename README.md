@@ -21,30 +21,30 @@ uv sync
 /___/_/ /_/____/\__/\____/ 
                            
 
-                                                                                                                                                                         
- Usage: insto [OPTIONS] COMMAND [ARGS]...                                                                                                                                
-                                                                                                                                                                         
-╭─ Options ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ --install-completion          Install completion for the current shell.                                                                                               │
-│ --show-completion             Show completion for the current shell, to copy it or customize the installation.                                                        │
-│ --help                        Show this message and exit.                                                                                                             │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-╭─ Commands ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ version                                                                                                                                                               │
-│ login                                                                                                                                                                 │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-
+                                                                                                            
+ Usage: insto [OPTIONS] COMMAND [ARGS]...                                                                   
+                                                                                                            
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --install-completion          Install completion for the current shell.                                  │
+│ --show-completion             Show completion for the current shell, to copy it or customize the         │
+│                               installation.                                                              │
+│ --help                        Show this message and exit.                                                │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ───────────────────────────────────────────────────────────────────────────────────────────────╮
+│ version                                                                                                  │
+│ login                                                                                                    │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 ```
 
 ## Example usage
 
 ```sh
-[dev@shamxl insto]$ uv run insto login username password
+[dev@shamxl insto]$ uv run insto login <YOUR_SESSION_ID>
 ```
 
 # TODO
 
-- [ ] fix login issue
+- [x] fix login issue
 - [ ] add who unfollowed you list
 - [ ] add profile tracking
